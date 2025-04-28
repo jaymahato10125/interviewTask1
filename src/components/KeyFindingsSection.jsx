@@ -81,7 +81,7 @@ const KeyFindingsSection = () => {
         <div className="key-findings-scroll">
           {keyFindings.map((card, idx) => (
             <div className="key-finding-card" key={idx}>
-              <img src="/images/1.png" alt={card.heading} className="key-finding-image" />
+              <img src={card.image} alt={card.heading} className="key-finding-image" />
               <h3 className="key-finding-title">{card.heading}</h3>
               <p className="key-finding-text" dangerouslySetInnerHTML={{ __html: card.text }} />
             </div>
