@@ -1,0 +1,113 @@
+.pain-points-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.section-header7 {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.section-header7 h2 {
+  font-size: 3rem;
+  color: #a192e7;
+  font-weight: 700;
+  background: #a192e7;
+  color: #fff;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 1.5rem 0;
+  margin: 0 0 0 0;
+  /* max-width: 900px; */
+  letter-spacing: 1px;
+}
+
+.growing-pains-row {
+  display: flex;
+  gap: 3rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  /* box-shadow: 0 2px 12px rgba(44, 62, 80, 0.06); */
+  padding: 2.5rem 2.5rem 2.5rem 3rem;
+  align-items: flex-start;
+  /* max-width: 1200px; */
+  margin: 0 auto 2.5rem auto;
+  border: 2px solid var(--primary-color);
+}
+
+.growing-pains-left {
+  flex: 1.2;
+  display: flex;
+  align-items: flex-start;
+}
+
+.growing-pains-left h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2c254d;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.growing-pains-left .highlight {
+  color: #a192e7;
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.growing-pains-right {
+  flex: 2;
+  padding-left: 2rem;
+}
+
+.growing-pains-right h4 {
+  font-size: 2rem;
+  color: #2c254d;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.growing-pains-right p {
+  color: #3d355c;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.percentage-link {
+  color: #a192e7;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.percentage-link:hover {
+  color: #6c5ce7;
+}
+
+.struggle-section-placeholder {
+  margin-top: 2.5rem;
+  min-height: 120px;
+  background: none;
+}
+
+@media (max-width: 900px) {
+  .growing-pains-row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .growing-pains-right {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+  .growing-pains-left h3, .growing-pains-left .highlight {
+    font-size: 2rem;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+} 

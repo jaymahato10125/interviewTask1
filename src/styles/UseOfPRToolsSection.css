@@ -1,0 +1,137 @@
+.use-of-pr-tools-section {
+  margin: 3rem auto 0 auto;
+  /* max-width: 1200px; */
+  padding: 0 0 2.5rem 0;
+}
+
+.pr-tools-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff6f3c;
+  border-radius: 1.5rem;
+  padding: 2.5rem 3rem;
+  margin-bottom: 2.5rem;
+  min-height: 110px;
+  position: relative;
+}
+
+.pr-tools-header-text {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.pr-tools-header-text .highlight {
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.pr-tools-header-illustration {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 90px;
+  background: url('https://cdn.prod.website-files.com/63e4e8e7b2b2b2b2b2b2b2b2/63e4e8e7b2b2b2b2b2b2b2b2_pr-tools-illustration.svg') no-repeat center/contain;
+  /* Use your own SVG or image here */
+}
+
+.pr-tools-content-row {
+  display: flex;
+  gap: 2.5rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  border: 2px solid var(--primary-color);
+  /* box-shadow: 0 2px 12px rgba(44, 62, 80, 0.06); */
+  padding: 3rem 2.5rem 3rem 3rem;
+  align-items: flex-start;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.pr-tools-content-left {
+  flex: 1.2;
+  display: flex;
+  align-items: flex-start;
+}
+
+.pr-tools-content-left h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c254d;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.pr-tools-content-left .highlight {
+  color: #ff6f3c;
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.pr-tools-content-right {
+  flex: 2;
+  padding-left: 2rem;
+}
+
+.pr-tools-content-right h3 {
+  font-size: 1.9rem;
+  color: #2c254d;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pr-tools-content-right p {
+  color: #3d355c;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlight-number {
+  color: #ff6f3c;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .pr-tools-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+  }
+  .pr-tools-header-text {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .pr-tools-header-illustration {
+    position: static;
+    transform: none;
+    width: 80px;
+    height: 60px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .pr-tools-content-row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .pr-tools-content-right {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+  .pr-tools-content-left h2, .pr-tools-content-left .highlight {
+    font-size: 2rem;
+  }
+} 

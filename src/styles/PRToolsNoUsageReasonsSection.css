@@ -1,0 +1,339 @@
+.pr-tools-no-usage-section {
+  background: #f8f9fa;
+  border-radius: 1.5rem;
+  margin: 3rem auto 0 auto;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  border: 2px solid var(--primary-color);
+  position: relative;
+}
+
+.pr-tools-no-usage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.pr-tools-no-usage-header h2 {
+  font-size: 2.2rem;
+  color: #2c254d;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.pr-tools-no-usage-header h2 .highlight {
+  color: #ff6f3c;
+  font-weight: 700;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.pr-tools-no-usage-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pr-tools-no-usage-tabs button {
+  background: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff6f3c;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+}
+
+.pr-tools-no-usage-tabs button.active {
+  background: #ff6f3c;
+  color: #fff;
+}
+
+.pr-tools-no-usage-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  margin: 2.5rem auto 0 auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c254d;
+  text-align: center;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 24px;
+  height: 25px;
+  /* gap: 5px; */
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  
+  /* margin-bottom: 0.5rem; */
+  vertical-align: middle;
+}
+
+.pr-tools-no-usage-charts-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "budget time other"
+    "noneed noneed noneed";
+  gap: 2.5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.budget-chart {
+  grid-area: budget;
+}
+.time-chart {
+  grid-area: time;
+}
+.other-chart {
+  grid-area: other;
+}
+.noneed-chart {
+  grid-area: noneed;
+}
+
+.pr-tools-no-usage-chart {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.04);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.budget-chart {
+  min-width: 260px;
+}
+.time-chart, .other-chart {
+  min-width: 200px;
+}
+.noneed-chart {
+  min-width: 0;
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.pr-tools-no-usage-reason {
+  font-size: 1.15rem;
+  color: #2c254d;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.pr-tools-no-usage-bars.vertical {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  height: 220px;
+}
+
+.pr-tools-no-usage-bar-group-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.pr-tools-no-usage-bar-vertical {
+  width: 100%;
+  background: #ffb199;
+  border-radius: 1.2rem 1.2rem 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  min-height: 12px;
+  transition: height 0.5s;
+}
+
+.pr-tools-no-usage-bar-value {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: #ff6f3c;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+  position: absolute;
+  top: -2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pr-tools-no-usage-bars.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.pr-tools-no-usage-bar-group-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.pr-tools-no-usage-bar-horizontal {
+  height: 28px;
+  background: #ffb199;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 12px;
+  transition: width 0.5s;
+}
+
+.pr-tools-no-usage-bar-group-horizontal .pr-tools-no-usage-bar-value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: #ff6f3c;
+  border-radius: 1rem;
+  padding: 0.2rem 0.8rem;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .pr-tools-no-usage-charts-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "budget time"
+      "other noneed";
+    gap: 1.2rem 1.2rem;
+    max-width: 100%;
+  }
+  .budget-chart, .time-chart, .other-chart, .noneed-chart {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pr-tools-no-usage-charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 0.2rem;
+  }
+  .pr-tools-no-usage-chart {
+    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+  }
+}
+
+/* Table styles for Table tab */
+.pr-tools-no-usage-table-wrapper {
+  margin: 2.5rem auto 0 auto;
+  max-width: 900px;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.04);
+}
+
+.pr-tools-no-usage-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 1.15rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.04);
+}
+
+.pr-tools-no-usage-table thead tr {
+  background: #ff6f3c;
+}
+
+.pr-tools-no-usage-table thead th {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  border: none;
+}
+
+.pr-tools-no-usage-table th.reason {
+  background: #ffb199;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  min-width: 260px;
+  border-right: 2px solid #fff;
+}
+
+.pr-tools-no-usage-table tbody td {
+  color: #2c254d;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  background: #fff;
+}
+
+.pr-tools-no-usage-table tbody tr:not(:last-child) td,
+.pr-tools-no-usage-table tbody tr:not(:last-child) th.reason {
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.pr-tools-no-usage-table tbody tr {
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .pr-tools-no-usage-table-wrapper {
+    max-width: 100%;
+    margin: 1.2rem 0 0 0;
+    border-radius: 1.2rem;
+  }
+  .pr-tools-no-usage-table {
+    font-size: 0.98rem;
+    border-radius: 1.2rem;
+  }
+  .pr-tools-no-usage-table th.reason,
+  .pr-tools-no-usage-table thead th {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.98rem;
+    min-width: 120px;
+  }
+  .pr-tools-no-usage-table tbody td {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.98rem;
+  }
+}
+
+.budget-chart .pr-tools-no-usage-bar-group-vertical {
+  width: 90px;
+}
+.time-chart .pr-tools-no-usage-bar-group-vertical {
+  width: 70px;
+} 
